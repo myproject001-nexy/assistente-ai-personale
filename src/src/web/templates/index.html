@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 Assistente AI - Beta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🤖 Assistente AI Personale</h1>
+            <p>Beta Test v2.0 - Auto-miglioramento attivo</p>
+        </header>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Avatar Section -->
+            <section class="avatar-section">
+                <div class="avatar-container">
+                    <div class="avatar-placeholder">
+                        <span id="avatar-emoji">😊</span>
+                    </div>
+                    <div class="status">
+                        <p id="status-text">Pronto</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Chat Section -->
+            <section class="chat-section">
+                <div class="chat-container">
+                    <div id="messages" class="messages"></div>
+                </div>
+                
+                <!-- Input -->
+                <div class="input-section">
+                    <textarea id="user-input" placeholder="Scrivi qui o descrivi un compito..." rows="3"></textarea>
+                    <button id="send-btn" class="btn-primary">📤 Invia</button>
+                </div>
+                
+                <!-- Actions -->
+                <div class="actions">
+                    <button id="improve-btn" class="btn-secondary">🔧 Migliora</button>
+                    <button id="execute-btn" class="btn-secondary">🚀 Esegui Task</button>
+                    <button id="status-btn" class="btn-secondary">📊 Statistiche</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Stats Modal -->
+    <div id="stats-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📊 Statistiche Assistente</h2>
+            <div id="stats-content"></div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

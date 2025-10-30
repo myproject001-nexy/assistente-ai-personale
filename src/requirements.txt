@@ -1,0 +1,8 @@
+flask==2.3.2
+python-dotenv==1.0.0
+openai==2.6.1
+Pillow==10.2.0
+psutil==7.0.0
+PyQt6==6.6.1
+gunicorn==21.2.0
+requests==2.31.0
